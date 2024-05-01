@@ -1,6 +1,6 @@
 ## labelme
 
-Cover that pesky "save slide" button with a page number label when screenshotting slides at [slideshare.net](www.slideshare.net) because downloading slides in there is paywalled.
+Cover that pesky "save slide" button with a page number label when screenshotting slides at [slideshare.net](https://www.slideshare.net/) because downloading slides in there is paywalled.
 
 ## From
 ![Screenshot 2024-04-30 at 22-29-06 Badminton_2 pptx](https://github.com/yuan-miranda/labelme/assets/142481797/cf74b7bb-1721-4e59-957b-c3d204bba5c3)
