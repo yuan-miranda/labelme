@@ -1,6 +1,11 @@
 const fs = require('fs');
 const { createCanvas, loadImage } = require('canvas');
 
+// create img folder if it doesn't exist. (which is initially)
+if (!fs.existsSync("./img")) {
+    fs.mkdirSync("./img");
+} 
+
 const canvas = createCanvas(848, 477);
 const context = canvas.getContext('2d');
 
@@ -16,12 +21,9 @@ for (let i = 0; i < images.length; i++) {
         context.fillStyle = "black";
         context.font = "bold 30px Arial";
 
-        if (i < 9) {
-            context.fillText(`0${i + 1}`, 800, 52);
-        }
-        else {
-            context.fillText(`${i + 1}`, 800, 52);
-        }
+        if (i < 9) context.fillText(`0${i + 1}`, 800, 52);
+        else context.fillText(`${i + 1}`, 800, 52);
+        
         const buffer = canvas.toBuffer('image/png');
         fs.writeFileSync(`./img/${images[i]}`, buffer);
     });
